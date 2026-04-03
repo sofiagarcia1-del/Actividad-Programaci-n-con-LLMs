@@ -1,1 +1,3 @@
+Construcción de una matriz de transición de estados:
 
+Escribe una función llamada matriz_transicion_estados que reciba un pd.DataFrame con columnas id_proceso, timestamp y estado (valores categóricos tipo string), y devuelva un pd.DataFrame cuadrado con las probabilidades de transición entre estados: las filas representan el estado actual, las columnas el siguiente estado, y cada valor es la probabilidad (entre 0 y 1) de pasar de un estado al otro. Los estados sin transiciones registradas deben tener probabilidad 0.0. Filas y columnas deben estar ordenadas alfabéticamente. No uses bucles explícitos: usa shift y operaciones vectorizadas de pandas.
