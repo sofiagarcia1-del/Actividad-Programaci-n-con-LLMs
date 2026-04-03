@@ -1,4 +1,5 @@
-Reconstrucción con PCA y detección por error
+Reconstrucción con PCA y detección por error:
+
 Escribe una función llamada detectar_por_reconstruccion que reciba arrays X_train y X_test y un float umbral_percentil (entre 0 y 100). La 
 función debe: (1) ajustar un StandardScaler sobre X_train y transformar ambos conjuntos; (2) ajustar un PCA(n_components=0.90) sobre el 
 training escalado, proyectar y reconstruir con inverse_transform; (3) calcular el error cuadrático medio fila a fila entre X_test escalado
