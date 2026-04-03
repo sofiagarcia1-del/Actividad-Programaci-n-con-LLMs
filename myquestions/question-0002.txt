@@ -1,1 +1,6 @@
+Detección de solapamientos temporales por entidad:
 
+Escribe una función llamada detectar_solapamientos que reciba un pd.DataFrame con columnas entidad_id, inicio y fin (ambas de tipo datetime
+o convertibles), y devuelva el mismo DataFrame con una columna adicional solapado (booleano): True cuando el intervalo de esa fila comienza
+antes de que haya terminado el intervalo anterior de la misma entidad. El resultado debe estar ordenado por entidad_id e inicio ascendente,
+con índice reiniciado. No uses bucles explícitos: usa groupby + shift.
