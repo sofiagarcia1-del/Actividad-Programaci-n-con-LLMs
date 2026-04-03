@@ -1,1 +1,7 @@
+Calibración de probabilidades y comparación de Brier Score:
 
+Escribe una función llamada calibrar_y_comparar que reciba arrays X e y (clasificación binaria) y realice lo siguiente: (1) divida los
+datos 70/30 con random_state=42; (2) estandarice con StandardScaler (ajuste solo sobre train); (3) entrene un 
+RandomForestClassifier(n_estimators=100, random_state=42); (4) calibre ese clasificador con CalibratedClassifierCV(cv="prefit", 
+method="isotonic") ajustándolo sobre el test; (5) calcule el brier_score_loss en test antes y después de la calibración. Devuelve un 
+diccionario con las claves brier_sin_calibrar, brier_calibrado y mejora (diferencia, positiva si la calibración redujo el error).
