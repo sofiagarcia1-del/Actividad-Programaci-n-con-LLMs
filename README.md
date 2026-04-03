@@ -1,4 +1,4 @@
-# Actividad-Programaci-n-con-LLMs
+# Actividad-Programacion con LLMs
 
 Modelos 1 - Universidad de Antioquia 2026-1
 Sofia Garcia Cantero
